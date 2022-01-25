@@ -1,0 +1,80 @@
+.intro {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(53, 53, 53);
+    /*background-image: url("../../img/paper_texture_edited.jpeg");*/
+    color: rgb(235, 235, 235);
+}
+
+.intro-left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-left-container {
+    padding: 8%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-left-name-hi {
+    font-size: 40px;
+}
+
+.intro-left-name-grant {
+    font-size: 80px;
+    padding-bottom: 40px;
+}
+
+.intro-left-roles-container {
+    word-wrap: break-word;
+    font-size: 45px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.intro-left-im {
+    float: left;
+    margin-right: 12px;
+}
+
+.intro-left-roles-marquee {
+    float: left;
+    height: 100%;
+    animation: move 6s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    50% {
+        transform: translateY(-70px);
+    }
+    100% {
+        transform: translateY(-135px);
+    }
+}
+
+.intro-left-role {
+    color: rgb(92, 125, 224);
+    padding-bottom: 10px;
+}
+
+.intro-left-description {
+    padding-top: 40px;
+    padding-right: 20%;
+    font-size: 25px;
+    word-break: break-word;
+}
+
+.intro-right {
+    flex: 2;
+}
+
+.intro-right-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

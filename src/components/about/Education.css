@@ -1,0 +1,14 @@
+.education {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(5, 76, 85);
+    align-items: center;
+}
+
+.education-left {
+    flex: 1;
+}
+
+.education-right {
+    flex: 1;
+}
