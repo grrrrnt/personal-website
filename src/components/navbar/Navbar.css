@@ -26,18 +26,46 @@
     justify-content: flex-start;
 }
 
-.navbar-logo {
-    height: 140%;
+.navbar-logo-button {
+    height: 100%;
     object-fit: contain;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
-.socials {
+.navbar-logo {
+    height: 100%;
+}
+
+.navbar-logo:hover {
+    filter: brightness(120%) sepia(30) saturate(120) hue-rotate(150deg);
+}
+
+.socials-1, .socials-2, .socials-3, .socials-4 {
     cursor: pointer;
     flex: 1;
     height: 30%;
     width: 30%;
     object-fit: contain;
     color: white;
+}
+
+.socials-1:hover {
+    filter: brightness(70%) sepia(60) saturate(50) hue-rotate(15deg);
+}
+
+.socials-2:hover {
+    filter: brightness(100%) sepia(10) saturate(50) hue-rotate(0deg);
+}
+
+.socials-3:hover {
+    filter: brightness(20%) sepia(60) saturate(50) hue-rotate(-15deg);
+}
+
+.socials-4:hover {
+    filter: brightness(90%) sepia(60) saturate(30) hue-rotate(55deg);
 }
 
 .navbar-right {
