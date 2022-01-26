@@ -21,6 +21,7 @@ const Navbar = () => {
                 <h2 className="navbar-right-item">Skills</h2>
                 <h2 className="navbar-right-item">Blog</h2>
                 <h2 className="navbar-right-item">Contact</h2>
+                <h2 className="navbar-right-item">More</h2>
             </div>
         </div>
     </nav>);
