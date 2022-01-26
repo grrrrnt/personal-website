@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Intro from "./components/intro/Intro";
 import Education from "./components/about/Education"; 
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Intro />
       <Education />
     </div>

@@ -1,0 +1,46 @@
+.navbar {
+    background-color: linear-gradient(to bottom, #00bcd4, #00bcd4);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-wrapper {
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    flex: 3;
+    padding: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-logo {
+    height: 140%;
+    object-fit: contain;
+}
+
+.navbar-right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.navbar-right-item {
+    color: #FFF;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 5%;
+}
+
