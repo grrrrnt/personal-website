@@ -25,9 +25,7 @@ const Intro = () => {
                 </div>
             </div>
 
-            <div className="intro-right">
-                <img className="intro-right-photo" src={intro_photo} alt=""/>
-            </div>
+            <div className="intro-right" />
         </div>
         )
     }

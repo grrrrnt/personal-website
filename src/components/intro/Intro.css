@@ -70,11 +70,10 @@
 }
 
 .intro-right {
+    background-image: url("../../img/intro_photo.jpg");
     flex: 2;
-}
-
-.intro-right-photo {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    background-size: contain;
+    box-shadow: 0 0 10px 30px rgb(53, 53, 53) inset;
 }
