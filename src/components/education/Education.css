@@ -5,6 +5,16 @@
     align-items: center;
 }
 
+.empty-space-for-navbar {
+    height: 10vh;
+    top: 0;
+}
+
+.education-container {
+    display: flex;
+    height: 90vh;
+}
+
 .education-left {
     flex: 1;
 }
