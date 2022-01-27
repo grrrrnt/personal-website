@@ -1,8 +1,7 @@
 .education {
-    display: flex;
     height: 100vh;
     background-color: rgb(5, 76, 85);
-    align-items: center;
+    color: white;
 }
 
 .empty-space-for-navbar {
@@ -10,15 +9,122 @@
     top: 0;
 }
 
-.education-container {
+.education-wrapper {
     display: flex;
     height: 90vh;
 }
 
 .education-left {
-    flex: 1;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-left-wrapper {
+    padding: 8%;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-left-preface {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.soc-logo {
+    width: 75%;
+}
+
+.education-left-degree-1 {
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.education-left-degree-2 {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.education-left-degree-2 h3 {
+    font-size: 25px;
+    color: rgb(236, 213, 0);
+    display: inline-block;
+}
+
+.education-left-degree-2 p {
+    padding-left: 10px;
+    display: inline-block;
+    height: 100%;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
 }
 
 .education-right {
-    flex: 1;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.education-right-wrapper {
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-right-preface {
+    font-size: 30px;
+}
+
+.education-right-spec {
+    font-size: 30px;
+    padding-top: 40px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.education-right-spec-no {
+    color: rgb(236, 213, 0);
+    display: inline-block;
+}
+
+.education-right-spec-name {
+    padding-left: 40px;
+    color: white;
+    display: inline-block;
+}
+
+.education-right-spec-courses {
+    white-space: pre;
+    font-size: 15px;
+    border-radius: 10px;
+    background: rgb(1, 99, 33);
+    padding: 12px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.education-right-spec-award {
+    font-style: italic;
+    font-size: 13px;
+    word-wrap: break-word;
+
+    width: 90%;
+}
+
+a:link {
+    color: rgb(203, 255, 15);
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
