@@ -1,5 +1,5 @@
 import "./Education.css";
-import React, { useState } from 'react';
+import React from 'react';
 import soc_logo from "../../img/nus-soc-logo-white.png";
 
 const Education = () => {

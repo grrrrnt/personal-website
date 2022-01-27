@@ -24,7 +24,6 @@ const Navbar = () => {
                 <Icon className="socials-2" icon="akar-icons:github-fill" onClick={() => { window.open("https://github.com/grrrrnt", "_blank") }} />
                 <Icon className="socials-3" icon="akar-icons:instagram-fill" onClick={() => { window.open("https://www.instagram.com/grrrr_nt", "_blank") }} />
                 <Icon className="socials-4" icon="akar-icons:spotify-fill" onClick={() => { window.open("https://smarturl.it/music-by-grant", "_blank") }} />
-                <ProgressBar height="6" bgcolor="#FFF" duration="0.2"/>
             </div>
             <div className="navbar-right">
                 <h2 className="navbar-right-item">
