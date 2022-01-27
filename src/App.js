@@ -3,6 +3,7 @@ import './App.css';
 import Intro from "./components/intro/Intro";
 import Education from "./components/education/Education"; 
 import Navbar from './components/navbar/Navbar';
+// import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (

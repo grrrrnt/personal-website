@@ -12,7 +12,7 @@
     top: 0;
 }
 
-.intro-container {
+.intro-wrapper {
     display: flex;
     height: 90vh;
 }
@@ -24,7 +24,7 @@
     justify-content: center;
 }
 
-.intro-left-container {
+.intro-left-wrapper {
     padding: 8%;
     height: 70%;
     display: flex;
@@ -59,7 +59,7 @@
     50% { border-color: teal; }
 }
 
-.intro-left-roles-container {
+.intro-left-roles-wrapper {
     word-wrap: break-word;
     font-size: 45px;
     height: 60px;
