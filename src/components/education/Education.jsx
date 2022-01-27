@@ -1,17 +1,8 @@
 import "./Education.css"
 import React, { useState } from 'react';
-import Collapsible from 'react-collapsible';
-
 import soc_logo from "../../img/nus-soc-logo-white.png"
 
 const Education = () => {
-
-    const [expandedPanel, setExpandedPanel] = useState(false);
-
-    const handleAccordionChange = (panel) => (event, isExpanded) => {
-        setExpandedPanel(isExpanded ? panel : false);
-    };
-
     return (
         <div className="education">
             <div className="empty-space-for-navbar" />
