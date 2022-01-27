@@ -3,7 +3,6 @@ import "./Navbar.css";
 import grant_logo from "../../img/grant_logo_white.png";
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll';
-import ProgressBar from "react-scroll-progress-bar";
 
 const scrollToTop = () => {
     window.scrollTo({
