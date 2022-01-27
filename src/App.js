@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar />
       <Intro />
-      <Education />
+      <Education id="education" />
     </div>
     // <div className="App">
     //   <header className="App-header">
