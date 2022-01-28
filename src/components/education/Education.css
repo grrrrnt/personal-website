@@ -63,6 +63,11 @@
     color: white;
 }
 
+.education-left-awards {
+    padding-top: 30px;
+    white-space: pre;
+}
+
 .education-right {
     flex: 2;
     display: flex;

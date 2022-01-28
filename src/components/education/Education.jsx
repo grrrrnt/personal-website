@@ -30,6 +30,11 @@ const Education = () => {
                             <h3>with Honours (Distinction)</h3>
                             <p>aka. Second Class (Upper) Honours</p>   
                         </div>
+                        <div className="education-left-awards">
+                            <h3>Academic awards received:</h3>
+                            <p>•  <a href="https://credentials.nus.edu.sg/5f93b047-5714-46c0-8c8c-4db16f892181" rel="noopener noreferrer" target="_blank">Certificate of Merit in Software Engineering Focus Area</a></p>
+                            <p>•  <a href="https://credentials.nus.edu.sg/cb7fdf52-979f-4541-af61-26fb1db88946" rel="noopener noreferrer" target="_blank">Dean's List (Academic Year 2021/2022, Semester 1)</a></p>
+                        </div>
                     </div>
                 </div>
                 <div className="education-right">
