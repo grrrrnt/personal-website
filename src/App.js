@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Intro />
+      <Intro id="intro" />
       <Education id="education" />
     </div>
     // <div className="App">

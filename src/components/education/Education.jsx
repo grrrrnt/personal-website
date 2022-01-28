@@ -1,11 +1,19 @@
 import "./Education.css";
 import React from 'react';
 import soc_logo from "../../img/nus-soc-logo-white.png";
+import { Link } from 'react-scroll';
+import intro_prev from "../../img/ui/chevron_up.png";
+import intro_next from "../../img/ui/chevron_down.png";
 
 const Education = () => {
     return (
         <div className="education">
             <div className="empty-space-for-navbar" />
+            <div className="prev">
+                <Link activeClass="active" to="intro" spy={true} smooth={true}>
+                    <img className="prev-next-img" src={intro_prev} alt=""/>
+                </Link>
+            </div>
             <div className="education-wrapper">
                 <div className="education-left">
                     <div className="education-left-wrapper">
@@ -57,6 +65,11 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="next">
+                <Link activeClass="active" to="projects" spy={true} smooth={true}>
+                    <img className="prev-next-img" src={intro_next} alt=""/>
+                </Link>
             </div>
         </div>
     )

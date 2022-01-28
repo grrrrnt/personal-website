@@ -2,6 +2,7 @@
     height: 100vh;
     background-color: rgb(5, 76, 85);
     color: white;
+    position: relative;
 }
 
 .empty-space-for-navbar {
@@ -126,4 +127,41 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+.prev {
+    position: absolute;
+    top: 50px + 10vh;
+    left: 50%;
+    right: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+}
+
+.next {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    right: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+}
+
+.prev-next-img {
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+    animation: blink 2.5s linear infinite alternate;
+    filter: invert(95%) sepia(0%) saturate(1079%) hue-rotate(187deg) brightness(116%) contrast(69%);
+}
+
+@keyframes blink {
+    from, to {
+        filter: invert(95%) sepia(0%) saturate(1079%) hue-rotate(187deg) brightness(70%) contrast(69%);
+    }
+    50% {
+        filter: invert(61%) sepia(33%) saturate(12%) hue-rotate(15deg) brightness(32%) contrast(89%);
+    }
 }
