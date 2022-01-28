@@ -1,11 +1,19 @@
 import "./Education.css";
 import React from 'react';
 import soc_logo from "../../img/nus-soc-logo-white.png";
+import { Link } from 'react-scroll';
+import intro_prev from "../../img/ui/chevron_up.png";
+import intro_next from "../../img/ui/chevron_down.png";
 
 const Education = () => {
     return (
         <div className="education">
             <div className="empty-space-for-navbar" />
+            <div className="prev">
+                <Link activeClass="active" to="intro" spy={true} smooth={true}>
+                    <img className="prev-next-img" src={intro_prev} alt=""/>
+                </Link>
+            </div>
             <div className="education-wrapper">
                 <div className="education-left">
                     <div className="education-left-wrapper">
@@ -21,6 +29,11 @@ const Education = () => {
                         <div className="education-left-degree-2">
                             <h3>with Honours (Distinction)</h3>
                             <p>aka. Second Class (Upper) Honours</p>   
+                        </div>
+                        <div className="education-left-awards">
+                            <h3>Academic awards received:</h3>
+                            <p>•  <a href="https://credentials.nus.edu.sg/5f93b047-5714-46c0-8c8c-4db16f892181" rel="noopener noreferrer" target="_blank">Certificate of Merit in Software Engineering Focus Area</a></p>
+                            <p>•  <a href="https://credentials.nus.edu.sg/cb7fdf52-979f-4541-af61-26fb1db88946" rel="noopener noreferrer" target="_blank">Dean's List (Academic Year 2021/2022, Semester 1)</a></p>
                         </div>
                     </div>
                 </div>
@@ -57,6 +70,11 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="next">
+                <Link activeClass="active" to="projects" spy={true} smooth={true}>
+                    <img className="prev-next-img" src={intro_next} alt=""/>
+                </Link>
             </div>
         </div>
     )

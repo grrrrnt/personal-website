@@ -1,5 +1,6 @@
 import "./Intro.css";
-import intro_photo from "../../img/intro_photo.jpg";
+import { Link } from 'react-scroll';
+import intro_next from "../../img/ui/chevron_down.png";
 
 const Intro = () => {
     return (
@@ -30,6 +31,11 @@ const Intro = () => {
                     <div className="intro-right-photo" />
                     <div className="intro-right-padding" />
                 </div>
+            </div>
+            <div className="next">
+                <Link activeClass="active" to="education" spy={true} smooth={true}>
+                    <img className="prev-next-img" src={intro_next} alt=""/>
+                </Link>
             </div>
         </div>
         )

@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/Navbar';
 import Intro from "./components/intro/Intro";
 import Education from "./components/education/Education"; 
-import Navbar from './components/navbar/Navbar';
+import Projects from './components/projects/Projects';
 // import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Intro />
+      <Intro id="intro" />
       <Education id="education" />
+      <Projects id="projects" />
     </div>
     // <div className="App">
     //   <header className="App-header">
