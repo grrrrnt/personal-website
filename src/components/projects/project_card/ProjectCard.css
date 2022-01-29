@@ -1,0 +1,122 @@
+.project-card {
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(70, 62, 94);
+    position: relative;
+    display: flex;
+}
+
+.project-card-banner {
+    flex: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.project-card-banner-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: left;
+}
+
+.project-card-info {
+    flex: 1;
+    height: 50%;
+    width: 100%;
+    text-align: left;
+}
+
+.project-card-category {
+    display: inline-block;
+    border-radius: 25px;
+    background: #5d9114;
+    padding-inline: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.project-card-title {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 50px;
+}
+
+.project-card-subtitle {
+    color: rgb(236, 213, 0);
+    margin-left: 40px;
+    margin-right: 40px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.project-card-description {
+    margin-left: 40px;
+    margin-right: 40px;
+    white-space: pre-wrap;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.project-card-stack {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;;
+    line-height: 110%;
+}
+
+.project-card-stack-header {
+    font-style: oblique;
+    margin-bottom: 5px;
+}
+
+.project-card-stack-item {
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 25px;
+    background: #db5406;
+    padding-inline: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.project-card-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.project-card-button {
+    margin-bottom: 12px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: rgb(207, 187, 0);
+    padding: 10px;
+    width: 80%;;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 1px solid rgb(138, 138, 138);
+}
+
+a.project-card-button:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a.project-card-button:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a.project-card-button:hover {
+    background: rgb(175, 158, 2);
+    text-decoration: none;
+}

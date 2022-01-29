@@ -1,6 +1,6 @@
-.projects {
+.career {
     height: 100vh;
-    background-color: rgb(52, 51, 80);
+    background-color: rgb(107, 22, 22);
     color: white;
     position: relative;
 }
@@ -10,36 +10,18 @@
     top: 0;
 }
 
-.projects-wrapper {
+.career-wrapper {
     display: flex;
     height: 90vh;
 }
 
-.projects-carousel {
+.in-development {
     position: absolute;
-    width: 80%;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: drop-shadow(5px 5px 1px #000000);
-}
-
-.projects-carousel-opener {
-    position: relative;
-    text-overflow: clip;
-    white-space: nowrap;
-    top: 40%;
-    bottom: 50%;
-}
-
-.projects-title {
+    font-size: 35px;
     color: rgb(236, 213, 0);
-    font-size: 55px;
-}
-
-.projects-subtitle {
-    color: rgb(216, 216, 216);
-    font-size: 30px;
 }
 
 a:link {

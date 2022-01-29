@@ -3,7 +3,8 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Intro from "./components/intro/Intro";
 import Education from "./components/education/Education"; 
-import Projects from './components/projects/Projects';
+import Projects from "./components/projects/Projects";
+import Career from "./components/career/Career";
 // import { Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Intro id="intro" />
       <Education id="education" />
       <Projects id="projects" />
+      <Career id="career" />
     </div>
     // <div className="App">
     //   <header className="App-header">
