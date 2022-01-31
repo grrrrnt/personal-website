@@ -1,6 +1,6 @@
 import "./Education.css";
 import React from 'react';
-import soc_logo from "../../img/nus-soc-logo-white.png";
+import soc_logo from "../../img/education/nus-soc-logo-white.png";
 import { Link } from 'react-scroll';
 import intro_prev from "../../img/ui/chevron_up.png";
 import intro_next from "../../img/ui/chevron_down.png";
