@@ -113,6 +113,10 @@
     width: 90%;
 }
 
+.education-right-spec-courses-header {
+    padding-bottom: 0.8vh;
+}
+
 .education-right-spec-award {
     font-style: italic;
     font-size: 1.75vh;

@@ -1,8 +1,8 @@
 import "./Skills.css";
 import React from 'react';
 import { Link } from 'react-scroll';
-import intro_prev from "../../img/ui/chevron_up.png";
-import intro_next from "../../img/ui/chevron_down.png";
+import prev from "../../img/ui/chevron_up.png";
+import next from "../../img/ui/chevron_down.png";
 
 const Skills = () => {
     return (
@@ -10,7 +10,7 @@ const Skills = () => {
             <div className="empty-space-for-navbar" />
             <div className="prev">
                 <Link activeClass="active" to="career" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_prev} alt=""/>
+                    <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
             <div className="skills-wrapper">
@@ -20,7 +20,7 @@ const Skills = () => {
             </div>
             <div className="next">
                 <Link activeClass="active" to="more" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_next} alt=""/>
+                    <img className="prev-next-img" src={next} alt=""/>
                 </Link>
             </div>
         </div>

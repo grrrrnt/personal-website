@@ -42,6 +42,16 @@
     font-size: 3vh;
 }
 
+.projects-arrow {
+    filter: brightness() invert(1);
+    display: relative;
+    max-width: 8%;
+    max-height: 8%;
+    width: auto;
+    height: auto;
+    transform: translate(60vh, -5vh) rotate(-35deg) ;
+}
+
 a:link {
     color: rgb(203, 255, 15);
     text-decoration: none;

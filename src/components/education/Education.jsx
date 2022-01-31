@@ -1,9 +1,9 @@
 import "./Education.css";
 import React from 'react';
-import soc_logo from "../../img/nus-soc-logo-white.png";
+import soc_logo from "../../img/education/nus-soc-logo-white.png";
 import { Link } from 'react-scroll';
-import intro_prev from "../../img/ui/chevron_up.png";
-import intro_next from "../../img/ui/chevron_down.png";
+import prev from "../../img/ui/chevron_up.png";
+import next from "../../img/ui/chevron_down.png";
 
 const Education = () => {
     return (
@@ -11,7 +11,7 @@ const Education = () => {
             <div className="empty-space-for-navbar" />
             <div className="prev">
                 <Link activeClass="active" to="intro" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_prev} alt=""/>
+                    <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
             <div className="education-wrapper">
@@ -49,7 +49,7 @@ const Education = () => {
                             </p>
                             </div>
                             <div className="education-right-spec-courses">
-                                <h4>Undergraduate courses taken:</h4>
+                                <h4 className="education-right-spec-courses-header">Undergraduate courses taken:</h4>
                                 <p>•  CS4218 - Software Testing</p>
                                 <p>•  CS3219 - Software Principles and Patterns</p>
                                 <p>•  CS3203 - Software Engineering Project</p>
@@ -61,7 +61,7 @@ const Education = () => {
                             <h3 className="education-right-spec-no">2</h3>
                             <h3 className="education-right-spec-name">Artificial Intelligence</h3>
                             <div className="education-right-spec-courses">
-                                <h4>Undergraduate courses taken:</h4>
+                                <h4 className="education-right-spec-courses-header">Undergraduate courses taken:</h4>
                                 <p>•  CS4248 - Natural Language Processing</p>
                                 <p>•  CS4243 - Computer Vision</p>
                                 <p>•  CS3244 - Machine Learning</p>
@@ -73,7 +73,7 @@ const Education = () => {
             </div>
             <div className="next">
                 <Link activeClass="active" to="projects" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_next} alt=""/>
+                    <img className="prev-next-img" src={next} alt=""/>
                 </Link>
             </div>
         </div>
