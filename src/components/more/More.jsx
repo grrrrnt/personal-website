@@ -2,7 +2,7 @@ import "./More.css";
 import React from 'react';
 import { Link } from 'react-scroll';
 import prev from "../../img/ui/chevron_up.png";
-import next from "../../img/ui/chevron_down.png";
+import top from "../../img/ui/double_chevron_up.png";
 
 const More = () => {
     return (
@@ -20,7 +20,7 @@ const More = () => {
             </div>
             <div className="next">
                 <Link activeClass="active" to="intro" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={next} alt=""/>
+                    <img className="prev-next-img" src={top} alt=""/>
                 </Link>
             </div>
         </div>
