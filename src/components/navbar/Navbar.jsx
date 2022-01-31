@@ -3,6 +3,7 @@ import "./Navbar.css";
 import grant_logo from "../../img/navbar/grant_logo_white.png";
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from "react-router-dom";
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -51,9 +52,9 @@ const Navbar = () => {
                     </Link>
                 </h2>
                 <h2 className="navbar-blog-button">
-                    <Link activeClass="active" to="blog" spy={true} smooth={true}>
+                    <RouterLink to="/blog">
                         Blog
-                    </Link>
+                    </RouterLink>
                 </h2>
             </div>
         </div>

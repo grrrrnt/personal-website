@@ -15,13 +15,138 @@
     height: 90vh;
 }
 
-.in-development {
+.more-left {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15vh;
+}
+
+.more-left h2 {
+    color: rgb(245, 200, 0);
+    font-size: 4vh;
+    padding-bottom: 2vh;
+}
+
+.more-left form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+    border: 0.3vh solid white;
+    border-radius: 1.5vh;
+}
+
+.more-left input, textarea {
+    background-color: transparent;
+    padding: 2vh;
+    border: none;
+    border-bottom: 0.3vh solid white;
+    margin: 0.1vh;
+    font-size: 2vh;
+    color: white;
+    resize: vertical;
+}
+
+.more-left button {
+    background-color: transparent;
+    color: white;
+    font-size: 3vh;
+    border: none;
+    border-radius: 1.5vh;
+    padding: 2vh;
+    margin: 0.1vh;
+    cursor: pointer;
+}
+
+.more-left button:hover {
+    background-color: rgb(61, 57, 16);
+}
+
+.form-preface {
+    font-size: 2vh;
+    padding-bottom: 2vh;
+}
+
+.form-result {
+    font-style: italic;
+    font-size: 2vh;
+    padding-top: 2vh;
+    color:rgb(203, 255, 15)
+}
+
+.more-right {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.more-right h2 {
+    color: rgb(245, 200, 0);
+    font-size: 4vh;
+    padding-bottom: 2vh;
+}
+
+.more-right p {
+    font-size: 2.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.more-right-links, .more-right-resume {
+    padding-bottom: 5vh;
+}
+
+/* .in-development {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4vh;
     color: rgb(236, 213, 0);
+} */
+
+.more-socials {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: flex-start
+}
+
+.more-socials-1, .more-socials-2, .more-socials-3, .more-socials-4, .more-socials-5 {
+    cursor: pointer;
+    flex: 1;
+    height: 5vh;
+    width: 30%;
+    object-fit: contain;
+    color: white;
+}
+
+.more-socials-1:hover {
+    filter: brightness(70%) sepia(60) saturate(50) hue-rotate(15deg);
+}
+
+.more-socials-2:hover {
+    filter: brightness(100%) sepia(10) saturate(80) hue-rotate(-10deg);
+}
+
+.more-socials-3:hover {
+    filter: brightness(20%) sepia(60) saturate(50) hue-rotate(-15deg);
+}
+
+.more-socials-4:hover {
+    filter: brightness(90%) sepia(60) saturate(30) hue-rotate(55deg);
+}
+
+.more-socials-5:hover {
+    filter: brightness(95%) sepia(40) saturate(50) hue-rotate(190deg);
+}
+
+.devblog-link {
+    color: rgb(203, 255, 15);
+    text-decoration: none;
 }
 
 a:link {
