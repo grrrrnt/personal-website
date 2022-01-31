@@ -1,8 +1,9 @@
 import "./Projects.css";
 import React from 'react';
 import { Link } from 'react-scroll';
-import intro_prev from "../../img/ui/chevron_up.png";
-import intro_next from "../../img/ui/chevron_down.png";
+import prev from "../../img/ui/chevron_up.png";
+import next from "../../img/ui/chevron_down.png";
+import projects_arrow from "../../img/ui/curly-arrow.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ProjectCard from "./project_card/ProjectCard";
@@ -13,7 +14,7 @@ const Projects = () => {
             <div className="empty-space-for-navbar" />
             <div className="prev">
                 <Link activeClass="active" to="education" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_prev} alt=""/>
+                    <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
             <div className="projects-wrapper">
@@ -21,24 +22,25 @@ const Projects = () => {
                     <div className="projects-carousel-opener">
                         <h2 className="projects-title">Here's some of my current and previous work...</h2>
                         <p className="projects-subtitle">Flip through 'em to check out what I've been up to!</p>
+                        <img className="projects-arrow" src={projects_arrow} alt=""/>
                     </div>
-                    <div className="projects-carousel-card">
+                    <div>
                         <ProjectCard props={ProjectList[0]}/>
                     </div>
-                    <div className="projects-carousel-card">
+                    <div>
                         <ProjectCard props={ProjectList[1]}/>
                     </div>
-                    <div className="projects-carousel-card">
+                    <div>
                         <ProjectCard props={ProjectList[2]}/>
                     </div>
-                    <div className="projects-carousel-card">
+                    <div>
                         <ProjectCard props={ProjectList[3]}/>
                     </div>
                 </Carousel>
             </div>
             <div className="next">
                 <Link activeClass="active" to="career" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_next} alt=""/>
+                    <img className="prev-next-img" src={next} alt=""/>
                 </Link>
             </div>
         </div>

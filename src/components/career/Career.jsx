@@ -2,8 +2,8 @@ import "./Career.css";
 import React from 'react';
 import { Link } from 'react-scroll';
 import { Chrono } from 'react-chrono';
-import intro_prev from "../../img/ui/chevron_up.png";
-import intro_next from "../../img/ui/chevron_down.png";
+import prev from "../../img/ui/chevron_up.png";
+import next from "../../img/ui/chevron_down.png";
 import gametize from "../../img/career/gametize-logo.png";
 import stengineering from "../../img/career/st-engineering-logo.png";
 import nus from "../../img/career/nus-logo.png";
@@ -14,7 +14,7 @@ const Career = () => {
             <div className="empty-space-for-navbar" />
             <div className="prev">
                 <Link activeClass="active" to="projects" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_prev} alt=""/>
+                    <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
             <div className="career-wrapper">
@@ -95,7 +95,7 @@ const Career = () => {
             </div>
             <div className="next">
                 <Link activeClass="active" to="skills" spy={true} smooth={true}>
-                    <img className="prev-next-img" src={intro_next} alt=""/>
+                    <img className="prev-next-img" src={next} alt=""/>
                 </Link>
             </div>
         </div>
