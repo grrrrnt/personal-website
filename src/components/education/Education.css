@@ -30,17 +30,17 @@
 }
 
 .education-left-preface {
-    font-size: 30px;
-    padding-bottom: 20px;
+    font-size: 3.5vh;
+    padding-bottom: 2vh;
 }
 
 .soc-logo {
-    width: 75%;
+    width: 60%;
 }
 
 .education-left-degree-1 {
-    font-size: 30px;
-    padding-top: 40px;
+    font-size: 3.5vh;
+    padding-top: 4vh;
 }
 
 .education-left-degree-2 {
@@ -49,22 +49,22 @@
 }
 
 .education-left-degree-2 h3 {
-    font-size: 25px;
+    font-size: 3.5vh;
     color: rgb(236, 213, 0);
     display: inline-block;
 }
 
 .education-left-degree-2 p {
-    padding-left: 10px;
+    padding-left: 1vh;
     display: inline-block;
     height: 100%;
-    font-size: 15px;
+    font-size: 1.8vh;
     font-style: italic;
     color: white;
 }
 
 .education-left-awards {
-    padding-top: 30px;
+    padding-top: 3.5vh;
     white-space: pre;
 }
 
@@ -82,12 +82,12 @@
 }
 
 .education-right-preface {
-    font-size: 30px;
+    font-size: 3.5vh;
 }
 
 .education-right-spec {
-    font-size: 30px;
-    padding-top: 40px;
+    font-size: 3.5vh;
+    padding-top: 4vh;
     white-space: nowrap;
     overflow-x: auto;
 }
@@ -98,24 +98,24 @@
 }
 
 .education-right-spec-name {
-    padding-left: 40px;
+    padding-left: 4vh;
     color: white;
     display: inline-block;
 }
 
 .education-right-spec-courses {
     white-space: pre;
-    font-size: 15px;
-    border-radius: 10px;
+    font-size: 1.75vh;
+    border-radius: 1vh;
     background: rgb(1, 99, 33);
-    padding: 12px;
-    margin-top: 10px;
+    padding: 1.7vh;
+    margin-top: 1vh;
     width: 90%;
 }
 
 .education-right-spec-award {
     font-style: italic;
-    font-size: 13px;
+    font-size: 1.75vh;
     word-wrap: break-word;
     width: 90%;
 }
@@ -132,41 +132,4 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
-}
-
-.prev {
-    position: absolute;
-    top: 50px + 10vh;
-    left: 50%;
-    right: 50%;
-    width: 40px;
-    height: 40px;
-    z-index: 99;
-}
-
-.next {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    right: 50%;
-    width: 40px;
-    height: 40px;
-    z-index: 99;
-}
-
-.prev-next-img {
-    cursor: pointer;
-    max-width: 100%;
-    max-height: 100%;
-    animation: blink 2.5s linear infinite alternate;
-    filter: invert(95%) sepia(0%) saturate(1079%) hue-rotate(187deg) brightness(116%) contrast(69%);
-}
-
-@keyframes blink {
-    from, to {
-        filter: invert(95%) sepia(0%) saturate(1079%) hue-rotate(187deg) brightness(70%) contrast(69%);
-    }
-    50% {
-        filter: invert(61%) sepia(33%) saturate(12%) hue-rotate(15deg) brightness(32%) contrast(89%);
-    }
 }

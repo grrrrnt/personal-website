@@ -21,7 +21,7 @@
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: drop-shadow(5px 5px 1px #000000);
+    filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);
 }
 
 .projects-carousel-opener {
@@ -34,12 +34,12 @@
 
 .projects-title {
     color: rgb(236, 213, 0);
-    font-size: 55px;
+    font-size: 5vh;
 }
 
 .projects-subtitle {
     color: rgb(216, 216, 216);
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 a:link {
@@ -54,41 +54,4 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
-}
-
-.prev {
-    position: absolute;
-    top: 50px + 10vh;
-    left: 50%;
-    right: 50%;
-    width: 40px;
-    height: 40px;
-    z-index: 99;
-}
-
-.next {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    right: 50%;
-    width: 40px;
-    height: 40px;
-    z-index: 99;
-}
-
-.prev-next-img {
-    cursor: pointer;
-    max-width: 100%;
-    max-height: 100%;
-    animation: blink 2.5s linear infinite alternate;
-    filter: invert(95%) sepia(0%) saturate(1079%) hue-rotate(187deg) brightness(116%) contrast(69%);
-}
-
-@keyframes blink {
-    from, to {
-        filter: invert(95%) sepia(0%) saturate(1079%) hue-rotate(187deg) brightness(70%) contrast(69%);
-    }
-    50% {
-        filter: invert(61%) sepia(33%) saturate(12%) hue-rotate(15deg) brightness(32%) contrast(89%);
-    }
 }

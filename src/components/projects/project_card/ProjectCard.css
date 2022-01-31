@@ -23,87 +23,90 @@
 
 .project-card-info {
     flex: 1;
-    height: 50%;
     width: 100%;
     text-align: left;
+    overflow-y: scroll;
 }
 
 .project-card-category {
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 2.5vh;
     background: #5d9114;
-    padding-inline: 10px;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-inline: 1vh;
+    margin-top: 5vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
 }
 
 .project-card-title {
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 50px;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    font-size: 4vh;
 }
 
 .project-card-subtitle {
     color: rgb(236, 213, 0);
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 4vh;
+    margin-right: 4vh;
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
+    font-size: 2vh;
 }
 
 .project-card-description {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 4vh;
+    margin-right: 4vh;
     white-space: pre-wrap;
     text-align: justify;
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
+    font-size: 1.8vh;
 }
 
 .project-card-stack {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 50px;;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    margin-bottom: 3vh;
     line-height: 110%;
 }
 
 .project-card-stack-header {
     font-style: oblique;
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
 }
 
 .project-card-stack-item {
+    font-size: 1.8vh;
     font-weight: bold;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 2.5vh;
     background: #db5406;
-    padding-inline: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    padding-inline: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 0.5vh;
 }
 
 .project-card-button-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 4vh;
+    margin-right: 4vh;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .project-card-button {
-    margin-bottom: 12px;
+    margin-bottom: 1.2vh;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 1.5vh;
     background: rgb(207, 187, 0);
-    padding: 10px;
-    width: 80%;;
-    font-size: 20px;
+    padding: 1vh;
+    width: 80%;
+    font-size: 2vh;
     font-weight: bold;
-    outline: 1px solid rgb(138, 138, 138);
+    outline: 0.1vh solid rgb(138, 138, 138);
 }
 
 a.project-card-button:link {
