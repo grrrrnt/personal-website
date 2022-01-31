@@ -1,6 +1,6 @@
-.career {
+.skills {
     height: 100vh;
-    background-color: rgb(107, 22, 22);
+    background-color: rgb(22, 104, 107);
     color: white;
     position: relative;
 }
@@ -10,7 +10,7 @@
     top: 0;
 }
 
-.career-wrapper {
+.skills-wrapper {
     display: flex;
     height: 90vh;
 }
