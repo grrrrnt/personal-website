@@ -41,6 +41,7 @@
     font-size: 10vh;
     overflow: hidden;
     border-right: .15em solid teal;
+    filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);
     white-space: nowrap;
     color: rgb(236, 213, 0);
     /* font-family: 'PT Mono', monospace;   */
