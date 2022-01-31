@@ -7,8 +7,16 @@ import projects_arrow from "../../img/ui/curly-arrow.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ProjectCard from "./project_card/ProjectCard";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div className="projects">
             <div className="empty-space-for-navbar" />
@@ -17,7 +25,7 @@ const Projects = () => {
                     <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
-            <div className="projects-wrapper">
+            <div className="projects-wrapper" data-aos="fade-left">
                 <Carousel className="projects-carousel" emulateTouch useKeyboardArrows showStatus={false} showThumbs={false}>
                     <div className="projects-carousel-opener">
                         <h2 className="projects-title">Here's some of my current and previous work...</h2>

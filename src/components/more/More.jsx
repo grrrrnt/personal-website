@@ -6,6 +6,9 @@ import { Icon } from '@iconify/react';
 import prev from "../../img/ui/chevron_up.png";
 import top from "../../img/ui/double_chevron_up.png";
 import emailjs from '@emailjs/browser';
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const More = () => {
     const formRef = useRef();
@@ -23,15 +26,19 @@ const More = () => {
         document.getElementById("contact-form").reset();
     }
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div className="more">
-            <div className="empty-space-for-navbar" />
+            <div className="empty-space-for-navbar"/>
             <div className="prev">
                 <Link activeClass="active" to="skills" spy={true} smooth={true}>
                     <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
-            <div className="more-wrapper">
+            <div className="more-wrapper" data-aos="zoom-in">
                 <div className="more-left">   
                     <h2>Let's chat!</h2>
                     <p className="form-preface">Have something to say? Feel free to leave me a message below.</p>

@@ -7,8 +7,15 @@ import next from "../../img/ui/chevron_down.png";
 import gametize from "../../img/career/gametize-logo.png";
 import stengineering from "../../img/career/st-engineering-logo.png";
 import nus from "../../img/career/nus-logo.png";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Career = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div className="career">
             <div className="empty-space-for-navbar" />
@@ -17,7 +24,7 @@ const Career = () => {
                     <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
-            <div className="career-wrapper">
+            <div className="career-wrapper" data-aos="slide-right">
                 <div className="career-timeline" >
                     <Chrono
                         items={jobs}

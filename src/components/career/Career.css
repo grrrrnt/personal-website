@@ -19,7 +19,7 @@
     position: absolute;
     width: 80%;
     height: 70vh;
-    top: 53%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);

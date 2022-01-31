@@ -5,8 +5,16 @@ import { Link } from 'react-scroll';
 import prev from "../../img/ui/chevron_up.png";
 import next from "../../img/ui/chevron_down.png";
 import ReactCardFlipper from "react-card-flipper";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const Education = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div className="education">
             <div className="empty-space-for-navbar" />
@@ -16,7 +24,7 @@ const Education = () => {
                 </Link>
             </div>
             <div className="education-wrapper">
-                <div className="education-left">
+                <div className="education-left" data-aos="fade-up">
                     <div className="education-left-wrapper">
                         <h3 className="education-left-preface">
                             I attained my bachelor's degree at...
@@ -38,7 +46,7 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
-                <div className="education-right">
+                <div className="education-right" data-aos="slide-up">
                     <div className="education-right-wrapper">
                         <h3 className="education-right-preface">My specialisations are...</h3>
                         <div className="education-right-spec">
