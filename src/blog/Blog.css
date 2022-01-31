@@ -1,0 +1,27 @@
+.blog {
+    height: 100vh;
+    background-color: rgb(0, 54, 104);
+    color: rgb(235, 235, 235);
+    position: relative;
+}
+
+.empty-space-for-navbar {
+    height: 10vh;
+    top: 0;
+}
+
+.blog-wrapper {
+    display: flex;
+    height: 80vh;
+}
+
+
+.in-development {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
+    color: rgb(236, 213, 0);
+    
+}
