@@ -50,7 +50,7 @@ const Navbar = () => {
                         More
                     </Link>
                 </h2>
-                <h2 className="navbar-right-item">
+                <h2 className="navbar-blog-button">
                     <Link activeClass="active" to="blog" spy={true} smooth={true}>
                         Blog
                     </Link>
