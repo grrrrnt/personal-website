@@ -30,7 +30,7 @@ a:link {
 }
 
 a:visited {
-    color: pink;
+    color: rgb(203, 255, 15);
     text-decoration: none;
 }
 

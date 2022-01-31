@@ -28,7 +28,7 @@ const Career = () => {
                         theme={{
                             primary: "rgb(204, 80, 80)",
                             secondary: "rgb(236, 213, 0)",
-                            cardBgColor: "rgb(63, 28, 28)",
+                            cardBgColor: "rgb(51, 24, 24)",
                             cardForeColor: "white",
                             titleColor: "rgb(107, 22, 22)"
                           }}

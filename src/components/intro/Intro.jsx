@@ -1,6 +1,7 @@
 import "./Intro.css";
 import { Link } from 'react-scroll';
 import next from "../../img/ui/chevron_down.png";
+import Tilt from 'react-parallax-tilt';
 
 const Intro = () => {
     return (
@@ -28,7 +29,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div className="intro-right">
-                    <div className="intro-right-photo" />
+                    <Tilt className="intro-right-photo" tiltReverse={true} />
                     <div className="intro-right-padding" />
                 </div>
             </div>

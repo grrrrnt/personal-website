@@ -4,6 +4,7 @@ import soc_logo from "../../img/education/nus-soc-logo-white.png";
 import { Link } from 'react-scroll';
 import prev from "../../img/ui/chevron_up.png";
 import next from "../../img/ui/chevron_down.png";
+import ReactCardFlipper from "react-card-flipper";
 
 const Education = () => {
     return (
@@ -41,32 +42,39 @@ const Education = () => {
                     <div className="education-right-wrapper">
                         <h3 className="education-right-preface">My specialisations are...</h3>
                         <div className="education-right-spec">
-                            <h3 className="education-right-spec-no">1</h3>
-                            <h3 className="education-right-spec-name">Software Engineering</h3>
-                            <div className="education-right-spec-award">
-                            <p>
-                                Awarded the <a href="https://credentials.nus.edu.sg/5f93b047-5714-46c0-8c8c-4db16f892181" rel="noopener noreferrer" target="_blank">Certificate of Merit in Software Engineering Focus Area</a>
-                            </p>
-                            </div>
-                            <div className="education-right-spec-courses">
-                                <h4 className="education-right-spec-courses-header">Undergraduate courses taken:</h4>
-                                <p>•  CS4218 - Software Testing</p>
-                                <p>•  CS3219 - Software Principles and Patterns</p>
-                                <p>•  CS3203 - Software Engineering Project</p>
-                                <p>•  CP2106 - Orbital Programme</p>
-                                <p>•  Senior Advisor (TA) for Orbital Programme</p>
-                            </div>
+                            <ReactCardFlipper width="50vh" height="15vh" behavior="hover">
+                                <div className="education-right-spec-card-front">
+                                    <h3 className="education-right-spec-name">Software Engineering</h3>
+                                    <p className="education-right-spec-subtitle">(Hover over me!)</p>
+                                </div>
+                                <div className="education-right-spec-card-back">
+                                    <div className="education-right-spec-courses">
+                                        <h4 className="education-right-spec-courses-header">Undergraduate courses taken:</h4>
+                                        <p>•  CS4218 - Software Testing</p>
+                                        <p>•  CS3219 - Software Principles and Patterns</p>
+                                        <p>•  CS3203 - Software Engineering Project</p>
+                                        <p>•  CP2106 - Orbital Programme</p>
+                                        <p>•  Senior Advisor (TA) for Orbital Programme</p>
+                                    </div>
+                                </div>
+                            </ReactCardFlipper>
                         </div>
                         <div className="education-right-spec">
-                            <h3 className="education-right-spec-no">2</h3>
-                            <h3 className="education-right-spec-name">Artificial Intelligence</h3>
-                            <div className="education-right-spec-courses">
-                                <h4 className="education-right-spec-courses-header">Undergraduate courses taken:</h4>
-                                <p>•  CS4248 - Natural Language Processing</p>
-                                <p>•  CS4243 - Computer Vision</p>
-                                <p>•  CS3244 - Machine Learning</p>
-                                <p>•  CS3243 - Introduction to Artificial Intelligence</p>
-                            </div>
+                            <ReactCardFlipper width="50vh" height="15vh" behavior="hover">
+                                <div className="education-right-spec-card-front">
+                                    <h3 className="education-right-spec-name">Artificial Intelligence</h3>
+                                    <p className="education-right-spec-subtitle">(Hover over me too!)</p>
+                                </div>
+                                <div className="education-right-spec-card-back">
+                                    <div className="education-right-spec-courses">
+                                        <h4 className="education-right-spec-courses-header">Undergraduate courses taken:</h4>
+                                        <p>•  CS4248 - Natural Language Processing</p>
+                                        <p>•  CS4243 - Computer Vision</p>
+                                        <p>•  CS3244 - Machine Learning</p>
+                                        <p>•  CS3243 - Introduction to Artificial Intelligence</p>
+                                    </div>
+                                </div>
+                            </ReactCardFlipper>
                         </div>
                     </div>
                 </div>
