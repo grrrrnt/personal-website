@@ -13,15 +13,63 @@
 .skills-wrapper {
     display: flex;
     height: 90vh;
+    width: 50vw;
+    transform: translateX(50%);
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-.in-development {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4vh;
+.skills-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.skills-right {
+    padding-left: 8%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.skill-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+}
+
+.skill-section:hover h2 {
     color: rgb(236, 213, 0);
+}
+
+.skill-section:hover img {
+    filter: drop-shadow(0.5vh 0.5vh 0.1vh #525151);
+}
+
+.skill-section-name {
+    flex: 2;
+    padding-bottom: 1vh;
+}
+
+.skill-section-logos {
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-img {
+    filter: brightness(0) invert(1);
+    height: 10vh;
+    width: 10vh;
+    padding-right: 1vh;
 }
 
 a:link {

@@ -46,8 +46,8 @@ const Navbar = () => {
                     </Link>
                 </h2>
                 <h2 className="navbar-right-item">
-                    <Link activeClass="active" to="contact" spy={true} smooth={true}>
-                        Contact
+                    <Link activeClass="active" to="more" spy={true} smooth={true}>
+                        More
                     </Link>
                 </h2>
                 <h2 className="navbar-right-item">
@@ -55,7 +55,6 @@ const Navbar = () => {
                         Blog
                     </Link>
                 </h2>
-                <h2 className="navbar-right-item">More</h2>
             </div>
         </div>
     </nav>);

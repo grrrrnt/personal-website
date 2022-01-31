@@ -1,0 +1,39 @@
+.more {
+    height: 100vh;
+    background-color: rgb(78, 73, 21);
+    color: white;
+    position: relative;
+}
+
+.empty-space-for-navbar {
+    height: 10vh;
+    top: 0;
+}
+
+.more-wrapper {
+    display: flex;
+    height: 90vh;
+}
+
+.in-development {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
+    color: rgb(236, 213, 0);
+}
+
+a:link {
+    color: rgb(203, 255, 15);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(203, 255, 15);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
