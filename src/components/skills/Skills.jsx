@@ -21,8 +21,15 @@ import pwa from "../../img/skills/pwa.png";
 import scikitlearn from "../../img/skills/scikitlearn.png";
 import tensorflow from "../../img/skills/tensorflow.png";
 import nltk from "../../img/skills/nltk.png";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div className="skills">
             <div className="empty-space-for-navbar" />
@@ -32,7 +39,7 @@ const Skills = () => {
                 </Link>
             </div>
             <div className="skills-wrapper">
-                <div className="skills-left">
+                <div className="skills-left" data-aos="fade-up">
                     <div className="skill-section">
                         <h2 className="skill-section-name">Frontend Web</h2>
                         <div className="skill-section-logos">
@@ -58,7 +65,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className="skills-right">
+                <div className="skills-right" data-aos="fade-down">
                     <div className="skill-section">
                         <h2 className="skill-section-name">Languages</h2>
                         <div className="skill-section-logos">

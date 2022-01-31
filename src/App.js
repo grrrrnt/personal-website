@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Intro from "./components/intro/Intro";
@@ -7,7 +6,6 @@ import Projects from "./components/projects/Projects";
 import Career from "./components/career/Career";
 import Skills from './components/skills/Skills';
 import More from './components/more/More';
-// import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (

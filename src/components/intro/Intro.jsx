@@ -2,13 +2,21 @@ import "./Intro.css";
 import { Link } from 'react-scroll';
 import next from "../../img/ui/chevron_down.png";
 import Tilt from 'react-parallax-tilt';
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const Intro = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div className="intro">
             <div className="empty-space-for-navbar" />
             <div className="intro-wrapper">
-                <div className="intro-left">
+                <div className="intro-left" data-aos="slide-right">
                     <div className="intro-left-wrapper">
                         <div className="intro-left-name">
                             <h3 className="intro-left-name-hi">Hi there, I'm...</h3>
@@ -28,7 +36,7 @@ const Intro = () => {
                         </p>
                     </div>
                 </div>
-                <div className="intro-right">
+                <div className="intro-right" data-aos="slide-left">
                     <Tilt className="intro-right-photo" tiltReverse={true} />
                     <div className="intro-right-padding" />
                 </div>
