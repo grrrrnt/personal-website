@@ -17,7 +17,6 @@ const Projects = () => {
                 </Link>
             </div>
             <div className="projects-wrapper">
-                {/* <div className="projects-carousel"> */}
                 <Carousel className="projects-carousel" emulateTouch useKeyboardArrows showStatus={false} showThumbs={false}>
                     <div className="projects-carousel-opener">
                         <h2 className="projects-title">Here's some of my current and previous work...</h2>

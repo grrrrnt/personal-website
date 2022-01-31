@@ -15,13 +15,37 @@
     height: 90vh;
 }
 
-.in-development {
+.career-timeline {
     position: absolute;
-    top: 50%;
+    width: 80%;
+    height: 70vh;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4vh;
-    color: rgb(236, 213, 0);
+    filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);
+}
+
+.career-card {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+.career-card-stack {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    line-height: 140%;
+    align-items: end;
+}
+
+.career-card-stack-item {
+    font-size: 1.8vh;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 2.5vh;
+    background: #0d9101;
+    padding-inline: 1vh;
+    margin-right: 1vh;
 }
 
 a:link {
