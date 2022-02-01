@@ -84,6 +84,16 @@
     font-size: 3vh;
 }
 
+.navbar-right-item.onscreen {
+    color: rgb(236, 213, 0);
+    filter: drop-shadow(0.5vh 0.5vh 0.1vh #222222);
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 5%;
+    cursor: pointer;
+    font-size: 3vh;
+}
+
 .navbar-blog-button {
     display: inline-block;
     outline: 0.1vh solid rgb(138, 138, 138);
@@ -101,5 +111,6 @@
 
 .navbar-blog-button:hover {
     background-color: rgb(65, 22, 22);
+    filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);
 }
 

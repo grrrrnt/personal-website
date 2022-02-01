@@ -7,7 +7,7 @@ const Intro = () => {
             <div className="empty-space-for-navbar" />
             <div className="in-development">
                 <h2>In development... Stay tuned!</h2>
-                <Link to="/">Return to homepage.</Link>
+                <Link to="/">Click here to return to homepage.</Link>
             </div>
             <div className="blog-wrapper">
             </div>
