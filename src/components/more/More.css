@@ -50,6 +50,17 @@
     resize: vertical;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
 .more-left button {
     background-color: transparent;
     color: white;
