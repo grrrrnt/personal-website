@@ -134,7 +134,7 @@ const jobs = [
         cardTitle: "Senior Advisor for NUS Orbital Programme",
         cardSubtitle: "National University of Singapore (School of Computing)",
     }, {
-        title: "Jan 2022 - Present",
+        title: "Jan 2022 - Today",
         cardTitle: "Software Engineer",
         cardSubtitle: "Gametize",
         stack: ["Flutter", "Apache Struts", "MySQL", "ReactJS"]
