@@ -8,12 +8,10 @@ import ReactCardFlipper from "react-card-flipper";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import useScreenOrientation from 'react-hook-screen-orientation';
 
 
 const Education = () => {
-    const screenOrientation = useScreenOrientation();
-    const isPortrait = screenOrientation === 'portrait-primary' || screenOrientation === 'portrait-secondary';
+    const isPortrait = window.innerHeight > window.innerWidth;
 
     useEffect(() => {
         Aos.init({ duration: 1000 });

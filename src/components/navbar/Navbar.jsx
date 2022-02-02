@@ -4,7 +4,6 @@ import grant_logo from "../../img/navbar/grant_logo_white.png";
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll';
 import { Link as RouterLink } from "react-router-dom";
-import useScreenOrientation from 'react-hook-screen-orientation';
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -14,8 +13,7 @@ const scrollToTop = () => {
 };
 
 const Navbar = () => {
-    const screenOrientation = useScreenOrientation();
-    const isPortrait = screenOrientation === 'portrait-primary' || screenOrientation === 'portrait-secondary';
+    const isPortrait = window.innerHeight > window.innerWidth;
 
     const [education, setEducation] = useState(false);
     const [projects, setProjects] = useState(false);
