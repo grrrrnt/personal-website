@@ -4,18 +4,9 @@ import grant_logo from "../../img/navbar/grant_logo_white.png";
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll';
 import { Link as RouterLink } from "react-router-dom";
-import useScreenOrientation from 'react-hook-screen-orientation';
-
-const scrollToTop = () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-};
 
 const Navbar = () => {
-    const screenOrientation = useScreenOrientation();
-    const isPortrait = screenOrientation === 'portrait-primary' || screenOrientation === 'portrait-secondary';
+    const isPortrait = window.innerHeight > window.innerWidth;
 
     const [education, setEducation] = useState(false);
     const [projects, setProjects] = useState(false);
@@ -70,16 +61,21 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-wrapper">
-                <div className="navbar-left">
-                    <button onClick={scrollToTop} className="navbar-logo-button">
+                { !isPortrait && <div className="navbar-left">
+                    <Link activeClass="active" to="intro" spy={true} smooth={true} className="navbar-logo-button">
                         <img className="navbar-logo" src={grant_logo} alt=""/>
-                    </button>
+                    </Link>
                     {!isPortrait && <Icon className="socials-1" icon="akar-icons:linkedin-fill" onClick={() => { window.open("https://www.linkedin.com/in/grantleeyx/", "_blank") }} />}
                     {!isPortrait && <Icon className="socials-2" icon="akar-icons:github-fill" onClick={() => { window.open("https://github.com/grrrrnt", "_blank") }} />}
                     {!isPortrait && <Icon className="socials-3" icon="akar-icons:instagram-fill" onClick={() => { window.open("https://www.instagram.com/grrrr_nt", "_blank") }} />}
                     {!isPortrait && <Icon className="socials-4" icon="akar-icons:spotify-fill" onClick={() => { window.open("https://smarturl.it/music-by-grant", "_blank") }} />}
-                </div>
+                </div> }
                 <div className="navbar-right">
+                    { isPortrait && 
+                    <Link activeClass="active" to="intro" spy={true} smooth={true} className="navbar-logo-button">
+                        <img className="navbar-logo" src={grant_logo} alt=""/>
+                    </Link>
+                    }
                     <h2 className={`navbar-right-item${education ? " onscreen" : ""}`}>
                         <Link activeClass="active" to="education" spy={true} smooth={true}>
                             Education
@@ -110,6 +106,7 @@ const Navbar = () => {
                             Blog
                         </RouterLink>
                     </h2>
+                    { isPortrait && <h2 className="navbar-blog-button hidden">!</h2> }
                 </div>
             </div>
         </nav>

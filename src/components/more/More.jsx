@@ -9,11 +9,9 @@ import emailjs from '@emailjs/browser';
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import useScreenOrientation from 'react-hook-screen-orientation';
 
 const More = () => {
-    const screenOrientation = useScreenOrientation();
-    const isPortrait = screenOrientation === 'portrait-primary' || screenOrientation === 'portrait-secondary';
+    const isPortrait = window.innerHeight > window.innerWidth;
 
     const formRef = useRef();
     const [done, setDone] = useState(false);

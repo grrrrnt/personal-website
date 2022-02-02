@@ -138,4 +138,8 @@ a.project-card-button:hover {
     .project-card-info {
         flex: 3;
     }
+
+    .project-card-category {
+        font-size: 15px;
+    }
 }

@@ -114,11 +114,26 @@
     filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);
 }
 
+.navbar-blog-button.hidden {
+    visibility: hidden;
+}
+
 
 @media screen and (orientation:portrait) {
-    .navbar {
-        /* visibility: hidden; */
-        
+    .navbar-right {
+        padding-left: 5%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .navbar-logo-button {
+        padding-right: 5%;
+    }
+    
+    .navbar-logo {
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar-wrapper {
