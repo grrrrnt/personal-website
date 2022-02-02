@@ -6,13 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Blog from './blog/Blog';
 
-if ('serviceWorker' in navigator) {
-  try {
-    navigator.serviceWorker.register('./service-worker.js');
-  } catch (e) {
-    console.log("ServiceWorker registration failed.");
-  }
-}
+// if ('serviceWorker' in navigator) {
+//   try {
+//     navigator.serviceWorker.register('./service-worker.js');
+//   } catch (e) {
+//     console.log("ServiceWorker registration failed.");
+//   }
+// }
 
 ReactDOM.render(
   <Router>
