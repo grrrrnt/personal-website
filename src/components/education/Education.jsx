@@ -8,9 +8,13 @@ import ReactCardFlipper from "react-card-flipper";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import useScreenOrientation from 'react-hook-screen-orientation';
 
 
 const Education = () => {
+    const screenOrientation = useScreenOrientation();
+    const isPortrait = screenOrientation === 'portrait-primary' || screenOrientation === 'portrait-secondary';
+
     useEffect(() => {
         Aos.init({ duration: 1000 });
     }, []);
@@ -50,10 +54,14 @@ const Education = () => {
                     <div className="education-right-wrapper">
                         <h3 className="education-right-preface">My specialisations are...</h3>
                         <div className="education-right-spec">
-                            <ReactCardFlipper width="50vh" height="15vh" behavior="hover">
+                            <ReactCardFlipper
+                                width="50vh"
+                                height="15vh"
+                                behavior={ isPortrait ? "click" : "hover"}
+                            >
                                 <div className="education-right-spec-card-front">
                                     <h3 className="education-right-spec-name">Software Engineering</h3>
-                                    <p className="education-right-spec-subtitle">(Hover over me!)</p>
+                                    <p className="education-right-spec-subtitle">({ isPortrait ? "Tap on" : "Hover over"} me!)</p>
                                 </div>
                                 <div className="education-right-spec-card-back">
                                     <div className="education-right-spec-courses">
@@ -68,10 +76,14 @@ const Education = () => {
                             </ReactCardFlipper>
                         </div>
                         <div className="education-right-spec">
-                            <ReactCardFlipper width="50vh" height="15vh" behavior="hover">
+                            <ReactCardFlipper
+                                width="50vh"
+                                height="15vh"
+                                behavior={ isPortrait ? "click" : "hover"}
+                            >
                                 <div className="education-right-spec-card-front">
                                     <h3 className="education-right-spec-name">Artificial Intelligence</h3>
-                                    <p className="education-right-spec-subtitle">(Hover over me too!)</p>
+                                    <p className="education-right-spec-subtitle">({ isPortrait ? "Tap on" : "Hover over"} me too!)</p>
                                 </div>
                                 <div className="education-right-spec-card-back">
                                     <div className="education-right-spec-courses">

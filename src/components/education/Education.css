@@ -139,13 +139,6 @@
     font-size: 2vh;
 }
 
-.education-right-spec-award {
-    font-style: italic;
-    font-size: 1.75vh;
-    word-wrap: break-word;
-    width: 90%;
-}
-
 a:link {
     color: rgb(203, 255, 15);
     text-decoration: none;
@@ -158,4 +151,100 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media screen and (orientation:portrait) {
+    .education-wrapper {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .education-left {
+        flex: 1;
+    }
+
+    .education-left-wrapper {
+        margin-left: 0;
+        height: 80%;
+    }
+
+    .education-left-preface {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .education-left-degree-1 {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .education-left-degree-2 {
+        white-space: normal;
+    }
+
+    .education-left-degree-2 h3 {
+        font-size: 13px;
+        display: block;
+    }
+
+    .education-left-degree-2 p {
+        font-size: 10px;
+        display: block;
+        padding-left: 0;
+    }
+
+    .education-left-awards {
+        font-size: 11px;
+        overflow: hidden;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .education-right {
+        flex: 3;
+    }
+
+    .education-right-wrapper {
+        height: 100%;
+        padding: 8%;
+    }
+
+    .education-right-preface {
+        font-size: 15px;
+    }
+
+    .education-right-spec {
+        font-size: 15px;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .education-right-spec-card-front {
+        width: 75vw;
+        height: 13vh;
+    }
+
+    .education-right-spec-name {
+        font-size: 25px;
+    }
+
+    .education-right-spec-subtitle {
+        font-size: 16px;
+    }
+
+    .education-right-spec-card-back {
+        width: 75vw;
+        height: 13vh;
+    }
+
+    .education-right-spec-courses {
+        font-size: 11px;
+    }
+    
+    .education-right-spec-courses-header {
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
 }

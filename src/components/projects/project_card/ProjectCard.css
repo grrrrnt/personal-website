@@ -26,6 +26,7 @@
     width: 100%;
     text-align: left;
     overflow-y: scroll;
+    z-index: 90;
 }
 
 .project-card-category {
@@ -122,4 +123,19 @@ a.project-card-button:visited {
 a.project-card-button:hover {
     background: rgb(175, 158, 2);
     text-decoration: none;
+}
+
+
+@media screen and (orientation:portrait) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card-banner {
+        flex: 1;
+    }
+
+    .project-card-info {
+        flex: 3;
+    }
 }

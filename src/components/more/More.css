@@ -123,7 +123,7 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: row;
     width: 50%;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .more-socials-1, .more-socials-2, .more-socials-3, .more-socials-4, .more-socials-5 {
@@ -172,4 +172,36 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media screen and (orientation:portrait) {
+    .more-right {
+        flex: 2;
+        padding: 5%;
+    }
+
+    .more-right h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .more-right p {
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+
+    .more-right-links, .more-right-resume {
+        padding-bottom: 30px;
+    }
+
+    .more-socials {
+        width: 80%;
+    }
+
+    .more-socials-1, .more-socials-2, .more-socials-3, .more-socials-4, .more-socials-5 {
+        height: 30px;
+        width: 30%;
+        object-fit: contain;
+        color: white;
+    }
 }

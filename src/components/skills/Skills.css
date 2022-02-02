@@ -86,3 +86,28 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
+
+@media screen and (orientation:portrait) {
+    .skills-wrapper {
+        /* flex-direction: column; */
+        /* height: 50vh;
+        width: 30vw; */
+    }
+
+    .skills-right {
+        /* padding-left: 0; */
+    }
+
+    .skill-section {
+        padding-bottom: 50px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .skill-img {
+        filter: brightness(0) invert(1);
+        height: 40px;
+        width: 40px;
+        padding-right: 10px;
+    }
+}

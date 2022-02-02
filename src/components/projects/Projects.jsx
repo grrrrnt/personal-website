@@ -26,7 +26,14 @@ const Projects = () => {
                 </Link>
             </div>
             <div className="projects-wrapper" data-aos="slide-up">
-                <Carousel className="projects-carousel" emulateTouch useKeyboardArrows showStatus={false} showThumbs={false}>
+                <Carousel className="projects-carousel"
+                    emulateTouch
+                    useKeyboardArrows
+                    showStatus={false}
+                    showThumbs={false}
+                    swipeScrollTolerance={20}
+                    preventMovementUntilSwipeScrollTolerance={true}
+                >
                     <div className="projects-carousel-opener">
                         <h2 className="projects-title">Here's some of my current and previous work...</h2>
                         <p className="projects-subtitle">Flip through 'em to check out what I've been up to!</p>

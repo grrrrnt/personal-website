@@ -114,3 +114,19 @@
     filter: drop-shadow(0.5vh 0.5vh 0.1vh #000000);
 }
 
+
+@media screen and (orientation:portrait) {
+    .navbar {
+        /* visibility: hidden; */
+        
+    }
+
+    .navbar-wrapper {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

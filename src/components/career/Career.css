@@ -47,6 +47,7 @@
     background: #0d9101;
     padding-inline: 1vh;
     margin-right: 1vh;
+    margin-bottom: 0.5vh;
 }
 
 a:link {
@@ -61,4 +62,10 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media screen and (orientation:portrait) {
+    .career-timeline {
+        width: 90%;
+    }
 }
