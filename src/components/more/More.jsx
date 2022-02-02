@@ -9,8 +9,12 @@ import emailjs from '@emailjs/browser';
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import useScreenOrientation from 'react-hook-screen-orientation';
 
 const More = () => {
+    const screenOrientation = useScreenOrientation();
+    const isPortrait = screenOrientation === 'portrait-primary' || screenOrientation === 'portrait-secondary';
+
     const formRef = useRef();
     const [done, setDone] = useState(false);
 
@@ -39,18 +43,20 @@ const More = () => {
                 </Link>
             </div>
             <div className="more-wrapper" data-aos="zoom-in">
-                <div className="more-left">   
-                    <h2>Let's chat!</h2>
-                    <p className="form-preface">Have something to say? Feel free to leave me a message below.</p>
-                    <form ref={formRef} onSubmit={handleSubmit} id="contact-form">
-                        <input type="text" name="name" placeholder="Name" required/>
-                        <input type="email" name="email" placeholder="Email" required/>
-                        <input type="text" name="subject" placeholder="Subject" required/>
-                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                    {done && <p className="form-result">Thank you for your message! I'll get back to you very soon.</p>}
-                </div>
+                {!isPortrait &&
+                    <div className="more-left">   
+                        <h2>Let's chat!</h2>
+                        <p className="form-preface">Have something to say? Feel free to leave me a message below.</p>
+                        <form ref={formRef} onSubmit={handleSubmit} id="contact-form">
+                            <input type="text" name="name" placeholder="Name" required/>
+                            <input type="email" name="email" placeholder="Email" required/>
+                            <input type="text" name="subject" placeholder="Subject" required/>
+                            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                        {done && <p className="form-result">Thank you for your message! I'll get back to you very soon.</p>}
+                    </div>
+                }
                 <div className="more-right">
                     <div className="more-right-links">
                         <h2>More ways to connect with me</h2>

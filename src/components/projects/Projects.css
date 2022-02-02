@@ -65,3 +65,12 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
+
+@media screen and (orientation:portrait) {
+    .projects-carousel-opener {
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        word-break: break-word;
+        top: 30%;
+    }
+}

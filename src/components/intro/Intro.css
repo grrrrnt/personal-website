@@ -25,7 +25,7 @@
 }
 
 .intro-left-wrapper {
-    padding: 8%;
+    padding: 15%;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,6 @@
 }
 
 .intro-left-description {
-    padding-top: 4vh;
     font-size: 2.5vh;
     word-break: break-word;
 }
@@ -111,9 +110,66 @@
     width: 90%;
     height: 100%;
     background-size: cover;
+    background-position: center;
     box-shadow: 0 0 1vh 3vh rgb(44, 44, 44) inset;
 }
 
 .intro-right-padding {
-    flex: 2;
+    flex: 4;
+}
+
+
+@media screen and (orientation:portrait) {    
+    .intro-wrapper {
+        height: 80vh;
+        flex-direction: column-reverse;
+    }
+
+    .intro-left {
+        flex: 2;
+    }
+
+    .intro-left-wrapper {
+        padding: 10%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .intro-left-name-hi {
+        font-size: 25px;
+    }
+
+    .intro-left-name-grant {
+        font-size: 40px;
+    }
+
+    .intro-left-roles-wrapper {
+        font-size: 20px;
+        height: 28px;
+    }
+
+    .intro-left-description {
+        font-size: 15px;
+    }
+
+    @keyframes move {
+        50% {
+            transform: translateY(-30px);
+        }
+        100% {
+            transform: translateY(-60px);
+        }
+    }
+
+    .intro-left-role {
+        padding-bottom: 4px;
+    }
+
+    .intro-right {
+        flex: 4;
+    }
+
+    .intro-right-padding {
+        flex: 0;
+    }
 }

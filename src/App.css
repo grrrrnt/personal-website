@@ -71,3 +71,20 @@
       filter: invert(61%) sepia(33%) saturate(12%) hue-rotate(15deg) brightness(92%) contrast(89%);
   }
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+@media screen and (orientation:portrait) {
+  .prev {
+    visibility: hidden;
+    /* top: 20px;
+    width: 30px; */
+  }
+
+  .next {
+    bottom: 20px;
+    width: 30px;
+  }
+}
