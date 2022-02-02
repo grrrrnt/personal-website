@@ -25,7 +25,7 @@ const Projects = () => {
                     <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
-            <div className="projects-wrapper" data-aos="fade-left">
+            <div className="projects-wrapper" data-aos="slide-up">
                 <Carousel className="projects-carousel" emulateTouch useKeyboardArrows showStatus={false} showThumbs={false}>
                     <div className="projects-carousel-opener">
                         <h2 className="projects-title">Here's some of my current and previous work...</h2>
