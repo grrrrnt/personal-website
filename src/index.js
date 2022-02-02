@@ -6,9 +6,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Blog from './blog/Blog';
 
-window.onload = () => {
-  if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
+  try {
     navigator.serviceWorker.register('./service-worker.js');
+  } catch (e) {
+    console.log("ServiceWorker registration failed.");
   }
 }
 
