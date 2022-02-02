@@ -6,6 +6,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Blog from './blog/Blog';
 
+window.onload = () => {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js');
+  }
+}
+
 ReactDOM.render(
   <Router>
     <Routes>
