@@ -1,0 +1,29 @@
+{
+  "short_name": "Grant",
+  "name": "Grant & His Shenanigans",
+  "icons": [
+    {
+      "src": "app-logo.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "app-logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "app-logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
