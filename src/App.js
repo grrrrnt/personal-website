@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Career from "./components/career/Career";
 import Skills from './components/skills/Skills';
 import More from './components/more/More';
+import Discography from './components/discography/Discography';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Projects id="projects" />
       <Career id="career" />
       <Skills id="skills" />
+      <Discography id="discography" />
       <More id="more" />
     </div>
   );

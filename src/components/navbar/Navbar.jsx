@@ -12,44 +12,58 @@ const Navbar = () => {
     const [projects, setProjects] = useState(false);
     const [career, setCareer] = useState(false);
     const [skills, setSkills] = useState(false);
+    const [discography, setDiscography] = useState(false);
     const [more, setMore] = useState(false);
 
     const listenScrollEvent = (event) => {
-        if (window.scrollY >= window.innerHeight * 4.8) {
+        if (window.scrollY >= window.innerHeight * 5.8) {
             setEducation(false);
             setProjects(false);
             setCareer(false);
             setSkills(false);
+            setDiscography(false);
             setMore(true);
+        } else if (window.scrollY >= window.innerHeight * 4.8) {
+            setEducation(false);
+            setProjects(false);
+            setCareer(false);
+            setSkills(false);
+            setDiscography(true);
+            setMore(false);
         } else if (window.scrollY >= window.innerHeight * 3.8) {
             setEducation(false);
             setProjects(false);
             setCareer(false);
             setSkills(true);
+            setDiscography(false);
             setMore(false);
         }  else if (window.scrollY >= window.innerHeight * 2.8) {
             setEducation(false);
             setProjects(false);
             setCareer(true);
             setSkills(false);
+            setDiscography(false);
             setMore(false);
         } else if (window.scrollY >= window.innerHeight * 1.8) {
             setEducation(false);
             setProjects(true);
             setCareer(false);
             setSkills(false);
+            setDiscography(false);
             setMore(false);
         } else if (window.scrollY >= window.innerHeight * 0.8) {
             setEducation(true);
             setProjects(false);
             setCareer(false);
             setSkills(false);
+            setDiscography(false);
             setMore(false);
         } else {
             setEducation(false);
             setProjects(false);
             setCareer(false);
             setSkills(false);
+            setDiscography(false);
             setMore(false);
         } 
     }
@@ -94,6 +108,11 @@ const Navbar = () => {
                     <h2 className={`navbar-right-item${skills ? " onscreen" : ""}`}>
                         <Link activeClass="active" to="skills" spy={true} smooth={true}>
                             Skills
+                        </Link>
+                    </h2>
+                    <h2 className={`navbar-right-item${discography ? " onscreen" : ""}`}>
+                        <Link activeClass="active" to="discography" spy={true} smooth={true}>
+                            Discography
                         </Link>
                     </h2>
                     <h2 className={`navbar-right-item${more ? " onscreen" : ""}`}>

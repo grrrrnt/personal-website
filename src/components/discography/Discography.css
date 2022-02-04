@@ -1,0 +1,62 @@
+.discography {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(16, 67, 116);
+    color: white;
+    position: relative;
+}
+
+.empty-space-for-navbar {
+    height: 10vh;
+    top: 0;
+}
+
+.discography-wrapper {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discography-wrapper h2 {
+    color: rgb(236, 213, 0);
+    font-size: 4vh;
+}
+
+.spotify-player {
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    height: 50vh;
+    width: 50vw;
+}
+
+a:link {
+    color: rgb(203, 255, 15);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(203, 255, 15);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (orientation:portrait) {
+    .discography-wrapper h2 {
+        color: rgb(236, 213, 0);
+        font-size: 30px;
+        text-align: center;
+    }    
+
+    .spotify-player {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 50%;
+        width: 80%;
+    }
+}

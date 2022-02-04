@@ -93,7 +93,7 @@ const Skills = () => {
                 </div>
             </div>
             <div className="next">
-                <Link activeClass="active" to="more" spy={true} smooth={true}>
+                <Link activeClass="active" to="discography" spy={true} smooth={true}>
                     <img className="prev-next-img" src={next} alt=""/>
                 </Link>
             </div>
