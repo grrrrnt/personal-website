@@ -36,7 +36,7 @@ const More = () => {
         <div className="more">
             <div className="empty-space-for-navbar"/>
             <div className="prev">
-                <Link activeClass="active" to="skills" spy={true} smooth={true}>
+                <Link activeClass="active" to="discography" spy={true} smooth={true}>
                     <img className="prev-next-img" src={prev} alt=""/>
                 </Link>
             </div>
