@@ -140,6 +140,8 @@
     .navbar-wrapper {
         overflow: auto;
         white-space: nowrap;
+        mask-image: linear-gradient(0.25turn, transparent, black 30%, black 70%, transparent 100%);
+        -webkit-mask-image: linear-gradient(0.25turn, transparent, black 30%, black 80%, transparent 100%);
     }
 
     ::-webkit-scrollbar {
