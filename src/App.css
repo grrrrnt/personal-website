@@ -39,18 +39,20 @@
 
 .prev {
   position: absolute;
+  margin: 0 auto;
   top: 10vh;
-  left: 50%;
-  right: 50%;
+  left: 0;
+  right: 0;
   width: 5vh;
   z-index: 99;
 }
 
 .next {
   position: absolute;
+  margin: 0 auto;
   bottom: 3vh;
-  left: 50%;
-  right: 50%;
+  left: 0;
+  right: 0;
   width: 5vh;
   z-index: 99;
 }
